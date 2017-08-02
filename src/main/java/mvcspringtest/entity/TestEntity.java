@@ -7,17 +7,18 @@ public class TestEntity {
 
     private String firstName;
 
-    private String lastName;
+    private int age;
 
     // обязательно должен быть конструктор без параметров, или вообще без конструктора, чтоб работал конструктор по умолчанию
 
     // и сеттеры
 
+
     @Override
     public String toString() {
         return "TestEntity{" +
                 "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
                 '}';
     }
 
@@ -26,9 +27,8 @@ public class TestEntity {
         return this;
     }
 
-    public TestEntity setLastName(String lastName) {
-        this.lastName = lastName;
+    public TestEntity setAge(int age) {
+        this.age = age;
         return this;
     }
-
 }
